@@ -228,11 +228,11 @@ VASTIntegrator.prototype._addSkipButton = function addSkipButton (source, tracke
     const timeLeft = Math.ceil(skipOffset - player.currentTime());
 
     if (timeLeft > 0) {
-      skipButton.innerHTML = 'Skip in ' + utilities.toFixedDigits(timeLeft, 2) + '...';
+      skipButton.innerHTML = player.localize('Skip in ') + utilities.toFixedDigits(timeLeft, 2) + player.localize('...');
     // eslint-disable-next-line
     } else if (!dom.hasClass(skipButton, 'enabled')) {
       dom.addClass(skipButton, 'enabled');
-      skipButton.innerHTML = 'Skip ad';
+      skipButton.innerHTML = player.localize('Skip ad');
     }
   }
 };
