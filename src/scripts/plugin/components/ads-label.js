@@ -4,12 +4,12 @@ var dom = require('../../utils/dom');
 
 var element = document.createElement('div');
 element.className = 'vjs-ads-label vjs-control vjs-label-hidden';
-element.innerHTML = 'Advertisement';
 
 var AdsLabelFactory = function(baseComponent) {
   return {
     /** @constructor */
     init: function init(player, options) {
+      element.innerHTML = player.localize('Advertisement');
       options.el = element;
       baseComponent.call(this, player, options);
 
