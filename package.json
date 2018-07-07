@@ -1,8 +1,8 @@
 {
-  "name": "videojs-vast-vpaid",
-  "version": "3.0.1-0",
+  "name": "@geoshar/videojs-vast-vpaid",
+  "version": "3.0.0-beta.16",
   "description": "VAST plugin to use with video.js",
-  "main": "./src/scripts/videojs_5.vast.vpaid.js",
+  "main": "dist/videojs_5.vast.vpaid.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/MailOnline/videojs-vast-vpaid"
